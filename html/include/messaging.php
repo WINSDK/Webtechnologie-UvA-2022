@@ -14,14 +14,14 @@ function send_confirmation_email($addr, $username, $verification_code) {
     $mailer = new PHPMailer(true);
 
     $mailer->isSMTP();
-    $mailer->Host = "send.one.com";
+    $mailer->Host = "host.com";
     $mailer->SMTPAuth = true;
-    $mailer->Username = "verification@gentue.com";
+    $mailer->Username = "email@address.com";
     $mailer->Password = "put_email_server_password_here";
     $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mailer->Port = 465;
 
-    $mailer->setFrom("verification@gentue.com", "Urza's Webshop");
+    $mailer->setFrom("verification@address.com", "Urza's Webshop");
     $mailer->addAddress($addr);
 
     $mailer->isHTML(true);
