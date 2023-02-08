@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     } elseif ($_POST["action"] == "checkout") {
         if (!$cart_empty) {
-            header("Location: checkout.php");
+            header("Location: /checkout");
         } else {
             header("Location: " . $_SERVER["REQUEST_URI"], true, 303);
         }

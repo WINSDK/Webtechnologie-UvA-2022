@@ -23,13 +23,13 @@ if (isset($_SESSION["cart"])) {
     <div class="box-head">
         <div class="box-row box-head-row">
             <div class="box-title">
-                <a href="/index"><span>URZA'S</span> WEBSHOP</a>
+                <a href="/"><span>URZA'S</span> WEBSHOP</a>
             </div>
         </div>
         <div class="box-row box-head-items box-light">
             <div class="box-left">
                 <ul>
-                    <li><a href="/index">Index</a></li>
+                    <li><a href="/">Index</a></li>
                     <li><a href="/shop">Shop</a></li>
 <?php if (isset($_SESSION["id"])): ?>
                     <li><a href="/forum">Forum</a></li>

@@ -256,7 +256,7 @@ if ($card["foil_price"] == 0) {
                         </tr>
                     </table>
                 </div>
-                <form method="post" action="/product.php?id=<?= $_GET["id"] ?>" class="form">
+                <form method="POST" action="/product?id=<?= $_GET["id"] ?>" class="form">
                     <fieldset>
                         <legend>
                             Add item(s) to cart
@@ -276,7 +276,7 @@ if ($card["foil_price"] == 0) {
                         <input type="hidden" id="id" name="id" value="<?= $_GET["id"] ?>">
                         <input id="cart-submit" type="submit" value="Add to cart">
 <?php else: ?>
-                        Please <a href="login.php">login</a> or <a href="register.php">register</a> to add this item to your cart.
+                        Please <a href="/login">login</a> or <a href="/register">register</a> to add this item to your cart.
 <?php endif; ?>
                     </fieldset>
                 </form>
@@ -294,7 +294,7 @@ if ($card["foil_price"] == 0) {
 foreach ($suggested_cards as $suggest_card):
     $card_front = $suggest_card["image"] ? $suggest_card["image"] : "/img/no_image_available.png";
     $card_back = $suggest_card["back_image"];
-    $card_page = "/product.php?id=" . $suggest_card["id"];
+    $card_page = "/product?id=" . $suggest_card["id"];
 ?>
 <?php if (isset($card_back)): ?>
         <div class="box-card-small">

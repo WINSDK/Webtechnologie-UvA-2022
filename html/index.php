@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -252,22 +250,6 @@ async function checked_fetch_json(resource, options = {}) {
     }
 
     window.location.replace("/index");
-}
-
-async function checked_fetch_json(resource, options = {}) {
-    var failed = false;
-    let request = await fetch(resource, options)
-        .then(v => v, _ => { failed = true });
-
-    if (failed || request.status == 500) {
-        return [];
-    }
-
-    if (request.status == 200) {
-        return await request.json();
-    }
-
-    window.location.replace("/index.php");
 }
 </script>
 <?php endif; ?>

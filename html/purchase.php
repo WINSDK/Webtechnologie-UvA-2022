@@ -47,7 +47,7 @@ if ($_GET["result"] == "success") {
     <h1>Purchase canceled.</h1>
     <p>
         Your cart is still saved, so feel free to
-        <a href="cart.php">change it</a>.
+        <a href="/cart">change it</a>.
     </p>
     <?php
     else:
