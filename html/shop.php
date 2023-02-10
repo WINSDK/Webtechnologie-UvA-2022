@@ -3,6 +3,7 @@
 include_once "include/common.php";
 include_once "include/db.php";
 
+session_start();
 error_reporting(0);
 
 $cards_per_page = 60;
