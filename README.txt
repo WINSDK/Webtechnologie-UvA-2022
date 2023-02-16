@@ -8,12 +8,7 @@ Kas Visser
 
 webpage:
 
-https://webtech-in21.webtech-uva.nl
-
-credentials: 
-
-username: admin
-password: mLqXRHVJ7B2c
+https://projects.gentue.com/webtech
 
 code references:
 
