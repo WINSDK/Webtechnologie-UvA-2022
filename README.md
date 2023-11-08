@@ -1,6 +1,7 @@
 ### Members
 * Nicolas Mazzon
 * Sebastian Gielens
+* Kas Visser
 * Servaes Koning
 * Ceylan Siegertsz
 
